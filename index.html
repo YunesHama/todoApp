@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>todoApp</title>
+  </head>
+  <body>
+    <div class="todoApp">
+      <form action="" class="todoApp__form">
+        <input
+          type="text"
+          class="todoApp__form__input todoApp__form__input--error"
+          autofocus
+          placeholder="Enter an activity.."
+        />
+        <a href="#" class="icon icon-plus">
+          <svg class="icon icon-plus">
+            <use xlink:href="./icons/symbol-defs.svg#icon-plus"></use>
+          </svg>
+        </a>
+      </form>
+      <ul class="todoApp__list">
+        <li class="todoApp__list__item todoApp__list__item--checked">
+          <span class="text">Make todoApp</span>
+          <a href="#" class="icon icon--check">
+            <svg class="icon icon-checkbox-checked">
+              <use
+                xlink:href="./icons/symbol-defs.svg#icon-checkbox-checked"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="icon icon--uncheck">
+            <svg class="icon icon-checkbox-unchecked">
+              <use
+                xlink:href="./icons/symbol-defs-yunes.svg#icon-checkbox-unchecked"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="todoApp__list__item">
+          <span class="text">Figure out PHP</span>
+          <a href="#" class="icon icon--check">
+            <svg class="icon icon-checkbox-checked">
+              <use
+                xlink:href="./icons/symbol-defs-yunes.svg#icon-checkbox-checked"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="icon icon--uncheck">
+            <svg class="icon icon-checkbox-unchecked">
+              <use
+                xlink:href="./icons/symbol-defs-yunes.svg#icon-checkbox-unchecked"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="todoApp__list__item">
+          <span class="text">Cure cancer</span>
+          <a href="#" class="icon icon--check">
+            <svg class="icon icon-checkbox-checked">
+              <use
+                xlink:href="./icons/symbol-defs-yunes.svg#icon-checkbox-checked"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="icon icon--uncheck">
+            <svg class="icon icon-checkbox-unchecked">
+              <use
+                xlink:href="./icons/symbol-defs-yunes.svg#icon-checkbox-unchecked"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="todoApp__list__item">
+          <span class="text">Reinvent wheel</span>
+          <a href="#" class="icon icon--check">
+            <svg class="icon icon-checkbox-checked">
+              <use
+                xlink:href="./icons/symbol-defs-yunes.svg#icon-checkbox-checked"
+              ></use>
+            </svg>
+          </a>
+          <a href="#" class="icon icon--uncheck">
+            <svg class="icon icon-checkbox-unchecked">
+              <use
+                xlink:href="./icons/symbol-defs-yunes.svg#icon-checkbox-unchecked"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="./icons/svgxuse.js"></script>
+  </body>
+</html>

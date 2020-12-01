@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("../../icons/style.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+$black: #000;
+$white: #fff;
+$green: #19ba99;
+$grey: #cbd5d2;
+$bodybg: #eef3f6;
+$input-field: rgba(255, 255, 255, 0.3);
+$font-size: 16px;
+
+body {
+  background-color: $bodybg;
+  font-family: "Roboto", sans-serif;
+  font-size: $font-size;
+}
+
+.todoApp {
+  width: 50%;
+  margin: 5% auto;
+
+  &__form {
+    background-color: $green;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    input {
+      background-color: $input-field;
+      font-size: $font-size;
+      font-family: "Roboto", sans-serif;
+      color: $white;
+      padding: 20px;
+      border-radius: 10px 30px 30px 10px;
+      outline: none;
+      border: none;
+      width: 100%;
+      box-sizing: border-box;
+      &::placeholder {
+        color: $white;
+      }
+    }
+    a.icon-plus {
+      background-color: $white;
+      position: absolute;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      top: 20px;
+      right: 20px;
+      border: 1px solid green;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: $green;
+    }
+    &__button {
+      background-color: $white;
+      font-size: 60px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 9.5px 18.5px;
+      border-radius: 50%;
+      color: $green;
+    }
+  }
+  &__list {
+    margin: 0 auto;
+    width: 95%;
+
+    &__item {
+      background-color: $white;
+      position: relative;
+      box-shadow: 2px 2px 1px $grey;
+      display: flex;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 20px;
+      .icon {
+        font-size: 28px;
+
+        &--check {
+          color: $green;
+        }
+        &--uncheck {
+          color: $green;
+        }
+      }
+      span {
+        line-height: 20px;
+      }
+      .icon--check {
+        padding-left: 740px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      &--checked {
+        text-decoration: line-through;
+        text-decoration-color: $green;
+        .icon--check {
+          display: inline-block;
+        }
+        .icon--uncheck {
+          display: none;
+        }
+      }
+    }
+  }
+}
