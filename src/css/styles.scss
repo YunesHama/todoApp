@@ -19,7 +19,6 @@ body {
 .todoApp {
   width: 50%;
   margin: 5% auto;
-
   &__form {
     background-color: $green;
     position: relative;
@@ -49,7 +48,7 @@ body {
       height: 60px;
       top: 20px;
       right: 20px;
-      border: 1px solid green;
+      border: 1px solid $green;
       border-radius: 50%;
 
       display: flex;
@@ -81,6 +80,9 @@ body {
       border-radius: 5px;
       margin-bottom: 10px;
       padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       .icon {
         font-size: 28px;
 
@@ -93,9 +95,9 @@ body {
       }
       span {
         line-height: 20px;
+        margin-right: auto;
       }
       .icon--check {
-        padding-left: 740px;
         display: flex;
         justify-content: flex-end;
       }
